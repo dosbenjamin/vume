@@ -1,0 +1,21 @@
+.header{
+  width: 100%;
+  height: 100vh;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo{
+    padding: 0;
+    margin: 0;
+    width: 94.7px;
+    height: 19.4px;
+    background-image: url("/../assets/svg/logo_vume_purple.svg");
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
