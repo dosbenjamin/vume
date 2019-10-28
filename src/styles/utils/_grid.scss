@@ -19,7 +19,7 @@ $modularscale: (
 /// Choose units based on the baseline grid
 ///
 /// @param {number} $unit
-///   The number of unit needed.
+///   The number of units needed.
 /// @param {string} $device
 ///   Choose the baseline grid to multiply `$unit`.
 /// @return {number} `$unit` multiply by `$device` value.
