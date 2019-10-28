@@ -1,23 +1,30 @@
-$grid: 15px;
-$fontSize: 20, 25, 31.25, 39.063, 48.828;
-$lineHeight: 1.5;
+@use "sass:map";
+
+$typeSettings: (
+  fontSize: (
+    m: 18px,
+    d: 23px
+  ),
+  lineHeight: (
+    m: 1.37,
+    d: 1.41
+  )
+);
 
 $modularscale: (
   base: 18px,
   ratio: $fourth
 );
 
-// @include medium{
-//   $fontSize: 20, 20, 30, 40;
-//   $lineHeight: 1.41;
-// }
-
-@function grid($fraction) {
-  $result:$fraction * $grid;
-  @return $result;
-}
-
-@function fontSize($fraction) {
-  $result: nth($fontSize, $fraction) * 1px;
-  @return $result;
+@function units($unit, $device) {
+  $fontSize: map.get(
+    map.get($typeSettings, fontSize),
+    $device
+  );
+  $lineHeight: map.get(
+    map.get($typeSettings, lineHeight),
+    $device
+  );
+  $blGrid: $lineHeight * $fontSize / 2;
+  @return $unit * $blGrid;
 }
