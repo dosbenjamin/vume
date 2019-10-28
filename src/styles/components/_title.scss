@@ -1,8 +1,14 @@
 .title{
   font-family: 'Syne', sans-serif;
   font-weight: 900;
-  font-size: fontSize(3);
+  font-size: fontSize(2);
   line-height: $lineHeight;
   margin: grid(2) 0;
   color: $cPurple;
+
+  &--header{
+    color: $cRed;
+    font-size: fontSize(3);
+    line-height: .9;
+  }
 }
