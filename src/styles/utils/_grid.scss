@@ -2,6 +2,11 @@ $grid: 15px;
 $fontSize: 20, 25, 31.25, 39.063, 48.828;
 $lineHeight: 1.5;
 
+$modularscale: (
+  base: 18px,
+  ratio: $fourth
+);
+
 // @include medium{
 //   $fontSize: 20, 20, 30, 40;
 //   $lineHeight: 1.41;
