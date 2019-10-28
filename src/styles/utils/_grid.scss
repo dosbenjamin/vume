@@ -16,6 +16,14 @@ $modularscale: (
   ratio: $fourth
 );
 
+/// Choose units based on the baseline grid
+///
+/// @param {number} $unit
+///   The number of unit needed.
+/// @param {string} $device
+///   Choose the baseline grid to multiply `$unit`.
+/// @return {number} `$unit` multiply by `$device` value.
+
 @function units($unit, $device) {
   $fontSize: map.get(
     map.get($typeSettings, fontSize),
