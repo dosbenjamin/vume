@@ -1,1 +1,1 @@
-//import hello from './components/hello';
+import animation from './components/animation';
