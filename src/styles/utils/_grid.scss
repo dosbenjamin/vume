@@ -16,8 +16,3 @@ $lineHeight: 1.5;
   $result: nth($fontSize, $fraction) * 1px;
   @return $result;
 }
-
-@function aLaCon($grid) {
-  @return $grid *2;
-  $GANGGANG: 2;
-}
