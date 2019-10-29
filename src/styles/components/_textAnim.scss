@@ -1,0 +1,37 @@
+.textAnim{
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  color: $cGrey;
+  font-size: 24.66px;
+
+  &--red{
+    color: $cRed;
+  }
+
+  &--purple{
+    color: $cPurple;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__el{
+    animation: textAnim 18s linear infinite;
+    margin: 0;
+
+    &--reverse{
+      animation-direction: reverse;
+    }
+
+    &--slow{
+        animation-duration: 10s;
+    }
+
+    &--fast{
+        animation-duration: 6s;
+    }
+  }
+}

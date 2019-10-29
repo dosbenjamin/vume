@@ -1,1 +1,1 @@
-//import animation from './components/animation';
+//import textAnim from './components/textAnim.js';

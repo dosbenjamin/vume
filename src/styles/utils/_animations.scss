@@ -3,3 +3,9 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes textAnim{
+  100%{
+    transform: translate(100%);
+  }
+}
