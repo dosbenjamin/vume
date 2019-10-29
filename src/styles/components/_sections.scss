@@ -1,0 +1,10 @@
+.section{
+  width: 100%;
+  overflow: hidden;
+  padding: units(6 ,m) 20px;
+  box-sizing: border-box;
+
+  &--right{
+    text-align: right;
+  }
+}

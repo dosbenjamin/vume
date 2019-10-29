@@ -1,20 +1,39 @@
 .title{
   font-family: 'Syne', sans-serif;
   font-weight: 900;
-    font-size: 33.78px; //CHANGE
+  font-size: 33.78px;
   line-height: 1.02;
   color: $cPurple;
   margin: 0;
 
   &--header{
     color: $cRed;
-    font-size: 46.28px; //CHANGE
+    font-size: 46.28px;
+  }
+
+  &--section{
+    margin-bottom: units(8, m);
+  }
+
+  &--ou{
+    color: $cBlack;
   }
 }
 
 .subtitle{
-  color: $cPurple;
+  color: $cRed;
   letter-spacing: .2em;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: units(1 ,m);
+  margin-bottom: units(8, m);
+
+  &--purple{
+    color: $cPurple;
+    margin: 0;
+  }
+
+  &--white{
+    color: $cWhite;
+  }
 }

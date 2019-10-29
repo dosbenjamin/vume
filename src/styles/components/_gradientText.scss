@@ -1,0 +1,28 @@
+.gradientText{
+  font-family: 'Syne', sans-serif;
+    font-size: 24.66px; //CHANGE
+  font-weight: 700;
+  text-align: right;
+  color: $cPurple;
+  margin-top: units(-4, m);
+
+  &--left{
+    text-align: left;
+  }
+
+  &__el{
+
+    &:nth-child(1){
+      opacity: .1;
+    }
+    &:nth-child(2){
+      opacity: .3;
+    }
+    &:nth-child(3){
+      opacity: .6;
+    }
+    &:nth-child(4){
+      opacity: .8;
+    }
+  }
+}
