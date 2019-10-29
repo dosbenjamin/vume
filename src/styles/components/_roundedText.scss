@@ -1,0 +1,14 @@
+.rounded{
+  width: 100%;
+  animation: 22S logo infinite linear;
+
+  &__span{
+    fill: none;
+  }
+
+  &__text{
+    font-family:'Inconsolata-Bold';
+    font-size: 5.5px;
+    fill: $cRed20;
+  }
+}
