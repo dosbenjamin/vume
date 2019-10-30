@@ -1,10 +1,19 @@
 .ou{
   margin: units(7, m) 0;
 
+  @include small{
+    margin: units(7, d) 0;
+    grid-column: 4 / 8;
+  }
+
   &__el{
     margin-bottom: units(3, m);
     display: flex;
     justify-content: space-between;
+
+    @include small{
+      margin-bottom: units(3, d);
+    }
   }
 
   &__date{

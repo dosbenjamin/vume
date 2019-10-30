@@ -6,6 +6,14 @@
   justify-content: center;
   align-items: center;
 
+  &--header{
+    @include small{
+      position: absolute;
+      top: units(2, d);
+      left: 32px;
+    }
+  }
+
   &__vume{
     padding: 0;
     margin: 0;
@@ -30,7 +38,7 @@
   }
 
   &__span{
-    font-family:'Inconsolata';
+    font-family:'Inconsolata', monospace;
     font-weight: 700;
     font-size:5px;
   }

@@ -4,4 +4,8 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+
+  @include small{
+    padding: units(6 ,d) 32px;
+  }
 }

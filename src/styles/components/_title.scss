@@ -6,9 +6,18 @@
   color: $cPurple;
   margin: 0;
 
+  @include small{
+    font-size: 64.47px;
+    line-height: 1.02;
+  }
+
   &--header{
     color: $cRed;
     font-size: 46.28px;
+
+    @include small{
+      font-size: 90.91px;
+    }
   }
 
   &--section{
@@ -17,6 +26,27 @@
 
   &--ou{
     color: $cBlack;
+  }
+
+  @include small{
+
+    &__remove{
+      display: none;
+    }
+
+    &--left{
+      grid-column: 2 / 5;
+    }
+
+    &--center{
+      text-align: center;
+      grid-column: 2 / 8;
+    }
+
+    &--right{
+      text-align: right;
+      grid-column: 3 / 8;
+    }
   }
 }
 
@@ -28,6 +58,13 @@
   margin-top: units(1 ,m);
   margin-bottom: units(8, m);
 
+  @include small{
+    margin-top: units(1 ,d);
+    margin-bottom: units(6, d);
+    grid-column: 2 / 6;
+    text-align: right;
+  }
+
   &--purple{
     color: $cPurple;
     margin: 0;
@@ -35,5 +72,9 @@
 
   &--white{
     color: $cWhite;
+
+    @include small{
+      grid-column: 6 / 8;
+    }
   }
 }

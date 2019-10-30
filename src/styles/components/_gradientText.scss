@@ -6,8 +6,18 @@
   color: $cPurple;
   margin-top: units(-4, m);
 
+  @include small{
+    margin-top: units(-4, d);
+    font-size: 45.73px;
+    grid-column: 3 / 7;
+  }
+
   &--left{
     text-align: left;
+
+    @include small{
+      grid-column: 2 / 6;
+    }
   }
 
   &__el{

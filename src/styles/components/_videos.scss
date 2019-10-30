@@ -1,7 +1,19 @@
 .video{
   background-color: #000;
-  height: units(16, m);
+  height: units(16, m); //remove
   margin: units(5, m) 0;
   width: calc(100% + 40px);
   margin-left: -20px;
+
+  @include small{
+    grid-column: 1 / 7;
+    width: calc(100% + 32px);
+    margin: units(5, d) 0;
+    margin-left: -32px;
+
+    &--large{
+      grid-column: 1 / -1;
+      width: calc(100% + 64px);
+    }
+  }
 }

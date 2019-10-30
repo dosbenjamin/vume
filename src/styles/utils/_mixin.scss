@@ -1,0 +1,17 @@
+@mixin small{
+   @media (min-width: #{$screen-small}){
+       @content;
+   }
+}
+
+@mixin meduim{
+   @media (min-width: #{$screen-meduim}){
+       @content;
+   }
+}
+
+@mixin large{
+    @media (min-width: #{$screen-large}){
+        @content;
+    }
+}

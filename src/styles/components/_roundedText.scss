@@ -5,6 +5,10 @@
   align-items: center;
   margin: units(5, m) 0;
 
+  @include small{
+    grid-column: 3 / 5;
+  }
+
   &__content{
     width: 100%;
     animation: 22S logo infinite linear;
