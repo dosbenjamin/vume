@@ -23,6 +23,12 @@
       //animation: 55s background infinite;
       filter: blur(20px);
       opacity: .6;
+
+      @include small{
+        left: 40%;
+        width: 955px;
+        height: 1015px;
+      }
     }
   }
 
@@ -33,6 +39,12 @@
         height: 839px;
         top: 0;
         left: -100%;
+
+        @include small{
+          left: -40%;
+          width: 1255px;
+          height: 1215px;
+        }
       }
   }
 
@@ -43,6 +55,13 @@
         height: 892px;
         top: -20%;
         left: -100%;
+
+        @include small{
+          width: 1329px;
+          height: 892px;
+          top: -20%;
+          left: -10%;
+        }
       }
   }
 
@@ -53,6 +72,13 @@
         height: 768px;
         top: -20%;
         left: -100%;
+
+        @include small{
+          width: 965.72px;
+          height: 768px;
+          top: -20%;
+          left: 0;
+        }
       }
   }
 
