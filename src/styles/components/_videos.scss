@@ -6,7 +6,7 @@
   margin-left: -20px;
 
   @include small{
-    grid-column: 1 / 7;
+    grid-column: 1 / 5;
     width: calc(100% + 32px);
     margin: units(5, d) 0;
     margin-left: -32px;
@@ -15,5 +15,9 @@
       grid-column: 1 / -1;
       width: calc(100% + 64px);
     }
+  }
+
+  @include large{
+    grid-column: 1 / 7;
   }
 }

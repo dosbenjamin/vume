@@ -2,6 +2,10 @@
   margin: units(7, m) 0;
 
   @include small{
+    grid-column: 2 / 6;
+  }
+
+  @include large{
     margin: units(7, d) 0;
     grid-column: 4 / 8;
   }
@@ -11,7 +15,7 @@
     display: flex;
     justify-content: space-between;
 
-    @include small{
+    @include large{
       margin-bottom: units(3, d);
     }
   }

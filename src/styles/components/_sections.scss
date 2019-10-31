@@ -10,8 +10,12 @@
 
   @include small{
     display: grid;
-    grid-template-columns: repeat(8, calc(12.5% - 16px));
+    grid-template-columns: repeat(6, calc(16.6666666667% - 16px));
     grid-gap: 0 16px;
     padding: units(6 ,d) 32px;
+  }
+
+  @include large{
+    grid-template-columns: repeat(8, calc(12.5% - 16px));
   }
 }

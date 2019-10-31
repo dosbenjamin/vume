@@ -10,6 +10,12 @@
     @include small{
       position: absolute;
       top: units(2, d);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include large{
+      transform: none;
       left: 32px;
     }
   }

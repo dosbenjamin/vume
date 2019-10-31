@@ -5,8 +5,11 @@
   font-size: 24.66px;
 
   @include small{
-    font-size: 45.73px;
     grid-column: 1 / -1;
+  }
+
+  @include large{
+    font-size: 45.73px;
   }
 
   &--red{

@@ -8,7 +8,7 @@ body{
   font-weight: 400;
   background-image: url("/../assets/images/texture_bg.png");
 
-  @include small{
+  @include large{
     font-size: 23px;
     line-height: 1.41;
   }
@@ -23,7 +23,7 @@ ul{
 p{
   margin: units(2, m) 0;
 
-  @include small{
+  @include large{
     margin: units(3, d) 0;
   }
 }
@@ -32,12 +32,21 @@ p{
   .gridText{
     grid-column: 2 / 5;
 
-    &--2-4{
+
+    &--4-8{
+      grid-column: 3 / 6;
+    }
+
+    &--5-8{
+      grid-column: 4 / 7;
+    }
+
+    &--5-7{
       grid-column: 3 / 5;
     }
 
-    &--4-8{
-      grid-column: 4 / 8;
+    &--2-4{
+      grid-column: 3 / 5;
     }
 
     &--3-6{
@@ -46,6 +55,15 @@ p{
 
     &--2-6{
       grid-column: 2 / 6;
+    }
+  }
+}
+
+@include large{
+  .gridText{
+
+    &--4-8{
+      grid-column: 4 / 8;
     }
 
     &--5-8{

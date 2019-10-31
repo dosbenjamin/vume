@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
 
-  @include small{
+  @include large{
     padding: units(6 ,d) 32px;
   }
 }

@@ -8,6 +8,11 @@
 
   @include small{
     margin-top: units(-4, d);
+    grid-column: 2 / 5;
+  }
+
+  @include large{
+    margin-top: units(-6, d);
     font-size: 45.73px;
     grid-column: 3 / 7;
   }
@@ -15,8 +20,8 @@
   &--left{
     text-align: left;
 
-    @include small{
-      grid-column: 2 / 6;
+    @include large{
+      grid-column: 3 / 8;
     }
   }
 
