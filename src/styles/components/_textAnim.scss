@@ -3,9 +3,14 @@
   font-weight: 700;
   color: $cGrey;
   font-size: 24.66px;
+  margin-left: -20px;
+  width: calc(100% + 40px);
+  overflow: hidden;
 
   @include small{
     grid-column: 1 / -1;
+    margin-left: -32px;
+    width: calc(100% + 64px);
   }
 
   @include large{
