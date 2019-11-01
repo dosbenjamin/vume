@@ -7,7 +7,7 @@
 
   @include large{
     margin: units(7, d) 0;
-    grid-column: 4 / 8;
+    grid-column: 3 / 8;
   }
 
   &__el{
@@ -17,6 +17,11 @@
 
     @include large{
       margin-bottom: units(3, d);
+      width: 79.773150209%;
+
+      &:nth-child(2), &:nth-child(4){
+        margin-left: 19.7390900688%;
+      }
     }
   }
 
