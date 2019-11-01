@@ -53,6 +53,12 @@
     }
   }
 
+  @include medium{
+    &--left{
+      grid-column: 2 / 4;
+    }
+  }
+
   @include large{
     &--center{
       grid-column: 2 / 8;
@@ -74,7 +80,6 @@
 
   @include small{
     grid-column: 2 / 5;
-    text-align: right;
   }
 
   @include large{
@@ -86,6 +91,7 @@
   &--purple{
     color: $cPurple;
     margin: 0;
+    text-align: center;
   }
 
   &--white{

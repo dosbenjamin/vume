@@ -9,6 +9,10 @@
     text-align: right;
   }
 
+  &:after{
+    animation: 50s background infinite;
+  }
+
   &--bg{
     &:after{
       content: '';
@@ -20,7 +24,6 @@
       left: 0;
       width: 569px;
       height: 605px;
-      //animation: 55s background infinite;
       filter: blur(20px);
       opacity: .6;
 

@@ -4,6 +4,12 @@
    }
 }
 
+@mixin medium{
+   @media (min-width: #{$screen-medium}){
+       @content;
+   }
+}
+
 @mixin large{
     @media (min-width: #{$screen-large}){
         @content;
