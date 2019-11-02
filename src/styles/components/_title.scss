@@ -94,15 +94,14 @@
     text-align: center;
   }
 
-  &--white{
-    color: $cWhite;
+  &--right{
 
     @include small{
       grid-column: 4 / 6;
     }
 
     @include large{
-      grid-column: 6 / 8;
+      grid-column: 5 / 8;
     }
   }
 }

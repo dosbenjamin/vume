@@ -1,0 +1,44 @@
+.link{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: $cPurple;
+  border: 2px solid $cPurple;
+  color: $cWhite;
+  padding: units(1, m) units(2, m);
+  margin: units(2, m) 0;
+
+  &:after{
+    content: '→';
+    font-size: 16px;
+    margin-left: 6px;
+  }
+
+  @include small{
+    grid-column: 2 / 6;
+    width: fit-content;
+    margin: units(1, m) 0;
+
+    &:after{
+      opacity: 0;
+      margin-left: -10px;
+    }
+  }
+
+  @include large{
+    margin-bottom: units(4, d);
+  }
+
+  &:hover{
+    background-color: transparent;
+    border: 2px solid $cPurple;
+    transition: all .3s ease-in-out;
+    color: $cPurple;
+
+    &:after{
+      animation: link .4s;
+      animation-fill-mode: forwards;
+    }
+  }
+}

@@ -19,5 +19,9 @@
 
   @include large{
     grid-column: 1 / 7;
+
+    &--large{
+      grid-column: 1 / -1;
+    }
   }
 }
