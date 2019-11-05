@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Vume. | percevoir l'invisible | iLab 2019 - heaj</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vume. | Percevoir l'invisible | iLab 2019 - HEAJ</title>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/styles/app.css">
-
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
@@ -16,240 +15,328 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-
-  <!-- Méta Google -->
   <meta name="title" content="Vume. | Percevoir l'invisible" />
-  <meta name="description" content="Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de te faire comprendre à quel point tu nuis à la planète grandit de jour en jour." />
-
-  <!-- Métas Facebook Opengraph -->
+  <meta name="description"
+    content="Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de te faire comprendre à quel point tu nuis à la planète grandit de jour en jour." />
   <meta property="og:title" content="Vume. | Percevoir l'invisible" />
-  <meta property="og:description" content="Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de te faire comprendre à quel point tu nuis à la planète grandit de jour en jour." />
+  <meta property="og:description"
+    content="Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de te faire comprendre à quel point tu nuis à la planète grandit de jour en jour." />
   <meta property="og:url" content="http://maximefondu.be/projets/ilab/" />
   <meta property="og:image" content="assets/images/banner.jpg" />
-  <meta property="og:type" content="website"/>
-
-  <!-- Métas Twitter Card -->
+  <meta property="og:type" content="website" />
   <meta name="twitter:title" content="Vume. | Percevoir l'invisible" />
-  <meta name="twitter:description" content="Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de te faire comprendre à quel point tu nuis à la planète grandit de jour en jour." />
+  <meta name="twitter:description"
+    content="Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de te faire comprendre à quel point tu nuis à la planète grandit de jour en jour." />
   <meta name="twitter:url" content="http://maximefondu.be/projets/ilab/" />
   <meta name="twitter:image" content="assets/images/banner.jpg" />
-
+  <link rel="stylesheet" type="text/css" href="/styles/app.css">
+  <script defer src="scripts/app.js"></script>
 </head>
-<body>
-  <header class="header">
-    <ul class="header__content">
-      <li class="header__el">
-        <div class="logo logo--header">
-          <a href="index.html">
-            <h1 class="logo__vume">Vume. - percevoir l'invisible</h1>
-            <svg class="logo__svg" x="0px" y="0px" viewBox="0 0 64.7 64.7">
-              <path id="SVGID_x5F_1_x5F_" class="logo__text" d="M59,32.4C59,47.1,47.1,59,32.4,59S5.7,47.1,5.7,32.4S17.6,5.7,32.4,5.7S59,17.6,59,32.4z"/>
-              <text>
-                <textPath  xlink:href="#SVGID_x5F_1_x5F_">
-                  <tspan class="logo__span">Percevoir l’invisible - Percevoir l’invisible</tspan>
-                </textPath>
-              </text>
-            </svg>
-          </a>
-        </div>
-      </li>
-      <li class="header__el"><h2 class="title title--header">Observation Réaction</h2></li>
-      <li class="header__el subtitle subtitle--purple">Une application pour percevoir&#8239;l'invisible</li>
-    </ul>
-  </header>
-  <main>
-    <section class="section section--bg">
-      <h2 class='title title--left'>Réalité augmentée</span></h2>
-      <p class="subtitle subtitle">Au service du climat</p>
 
-      <ul class="textAnim">
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation</p>
-          <p class="textAnim__el">&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation</p>
-          <p class="textAnim__el">&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation&#8239;→&#8239;Consommation</p>
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="logo" href="#">
+        <h1 class="logo__symbole">Vume. &mdash; Percevoir l'invisible</h1>
+        <svg class="logo__words" x="0px" y="0px" viewBox="0 0 64.7 64.7">
+          <path class="logo__circle" id="circle"
+            d="M59,32.4C59,47.1,47.1,59,32.4,59S5.7,47.1,5.7,32.4S17.6,5.7,32.4,5.7S59,17.6,59,32.4z" />
+          <text>
+            <textPath xlink:href="#circle">
+              <tspan>Percevoir l’invisible • Percevoir l’invisible</tspan>
+            </textPath>
+          </text>
+        </svg>
+      </a>
+      <h2 class="title title--center title--header">Observation <span class="line-break"></span>Réaction</h2>
+      <h3 class="title-alt title-alt--center">Une application pour percevoir l'invisible.</h3>
+    </div>
+    <div class="header__arrow"></div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <h2 class='title'>
+        Réalité <span class="line-break"></span>augmentée
+        <span class="title-alt title-alt--orange">au service du climat</span>
+      </h2>
+
+      <div class="liquid-position1"></div>
+
+      <ul class="banner">
+        <li class="banner__item">
+          <span>consommation → </span>
         </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el textAnim__el--reverse">&#8239;←&#8239;Influence&#8239;←&#8239;Climat&#8239;←&#8239;Influence&#8239;←&#8239;Climat&#8239;←&#8239;Influence&#8239;←&#8239;Climat</p>
-          <p class="textAnim__el textAnim__el--reverse">&#8239;←&#8239;Influence&#8239;←&#8239;Climat&#8239;←&#8239;Influence&#8239;←&#8239;Climat&#8239;←&#8239;Influence&#8239;←&#8239;Climat</p>
-          <p class="textAnim__el textAnim__el--reverse">&#8239;←&#8239;Influence&#8239;←&#8239;Climat&#8239;←&#8239;Influence&#8239;←&#8239;Climat&#8239;←&#8239;Influence&#8239;←&#8239;Climat</p>
+        <li class="banner__item banner__item--reverse">
+          <span>climat ← influence ← </span>
         </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration</p>
-          <p class="textAnim__el">&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration</p>
-          <p class="textAnim__el">&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration&#8239;→&#8239;Amélioration</p>
+        <li class="banner__item">
+          <span>amélioration → </span>
         </li>
       </ul>
 
-      <p class="gridText gridText--2-4">En fonction de sa consommation la personne recevra des conseils afin d'améliorer son microcosme.</p>
+      <p class="text text--short text--indent-1">
+        En fonction de sa consommation la personne recevra des conseils afin d'améliorer son microcosme.
+      </p>
 
-      <!-- video -->
+      <!-- <div class="video"></div> -->
+    </section>
+
+    <section class="section">
+      <h2 class='title title--center'>Pour qui & <span class="line-break"></span>pourquoi&#8239;?</h2>
+
+      <ul class="banner banner--orange">
+        <li class="banner__item banner__item--reverse">toi ← moi ← nous ← lui ← nous ← lui ← eux ← lui</li>
+        <li class="banner__item">eux → toi → vous → moi → toi → vous → climat → nous</li>
+        <li class="banner__item banner__item--reverse">nous ← eux ← toi ← vous ← lui ← toi ← moi ← eux</li>
+      </ul>
+
+      <p>
+        Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de
+        te faire comprendre à quel point tu nuis à la planète grandit de jour en jour.
+      </p>
+      <p class="text text--long text--indent-2">
+        Notre objectif est que tu te rendes compte de ton impact environnemental
+        néfaste pour ta planète. Tu met le feu à ta propre maison, c’est pour ça
+        qu’on te propose une solution où tu pourras agir individuellement sur ta
+        consommation personnelle journalière. Chaque petites décisions que tu prendras
+        deviendra une habitude qui, à long terme, aura un impact bénéfique sur ta planète.
+      </p>
+
+      <ul class="blinker blinker--indent">
+        <li class="blinker__item blinker__item--10">solutions individuelles</li>
+        <li class="blinker__item blinker__item--30">solutions individuelles</li>
+        <li class="blinker__item blinker__item--60">solutions individuelles</li>
+        <li class="blinker__item blinker__item--80">solutions individuelles</li>
+        <li class="blinker__item blinker__item--100">solutions individuelles</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class='title title--section'>
+        Bouger, <span class="line-break"></span>
+        observer, <span class="line-break"></span>
+        réagir.
+      </h2>
+
+      <div class="liquid-position"></div>
+
+      <p class="text text--indent-3">
+        À l’aide d’une technologie liée à la réalité augmentée, déplacez vous
+        avec votre smartphone afin d’analyser et d’apercevoir l’impact environnemental
+        qu’ont les objets autour de vous. Les données sont présentées sous forme de
+        particules à densités variables. (Au plus la densité est forte, au plus l’objet consomme).
+      </p>
+
       <div class="video"></div>
 
-    </section>
-    <section class="section">
-      <h2 class='title title--section title--center'>Pour qui & pourquoi&#8239;?</h2>
+      <p class="text text--long">
+        Ne pensez pas que télécharger l’application vos suffit pour vous débarrasser de nous.
+        Tous les mois l’environnement de l’utilisateur sera analysé afin de voir si les changements
+        conseillés auparavant, ont été appliqués. L’application lui permettra également de voir si ses
+        proches également inscrits, s’impliquent dans cette lutte pour le climat et établira donc une
+        sorte de classement (ou en tout cas, un moyen de comparaison).
+      </p>
 
-      <ul class="textAnim textAnim--red">
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-          <p class="textAnim__el">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-          <p class="textAnim__el">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-        </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el textAnim__el--fast">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-          <p class="textAnim__el textAnim__el--fast">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-          <p class="textAnim__el textAnim__el--fast">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-        </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el textAnim__el--slow">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-          <p class="textAnim__el textAnim__el--slow">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-          <p class="textAnim__el textAnim__el--slow">&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous&#8239;→&#8239;eux&#8239;→&#8239;moi&#8239;→&#8239;toi&#8239;→&#8239;lui&#8239;→&#8239;nous&#8239;→&#8239;vous</p>
-        </li>
-      </ul>
-
-      <p class="gridText">Vume est né grâce à toi, ou plutôt à cause de toi. Le besoin de te faire comprendre à quel point tu nuis à la planète grandit de jour en jour.</p>
-
-      <p class="gridText gridText--4-8">Notre objectif est que tu te rendes compte de ton impact environnemental néfaste pour ta planète. Tu met le feu à ta propre maison, c’est pour ça qu’on te propose une solution où tu pourras agir individuellement sur ta consommation personnelle journalière. Chaque petites décisions que tu prendras deviendra une habitude qui, à long terme, aura un impact bénéfique sur ta planète.</p>
-
-      <ul class="gradientText">
-        <li class="gradientText__el">Solutions&#8239;individuelles</li>
-        <li class="gradientText__el">Solutions&#8239;individuelles</li>
-        <li class="gradientText__el">Solutions&#8239;individuelles</li>
-        <li class="gradientText__el">Solutions&#8239;individuelles</li>
-        <li class="gradientText__el">Solutions&#8239;individuelles</li>
-      </ul>
-
-    </section>
-    <section class="section section--bg section--bouger">
-      <h2 class='title title--section title--left'>Bouger observer, réagir</h2>
-      <p class="gridText gridText--3-6">À l’aide d’une technologie liée à la réalité augmentée, déplacez vous avec votre smartphone afin d’analyser et d’apercevoir l’impact environnemental qu’ont les objets autour de vous.  Les données sont présentées sous forme de particules à densités variables. (Au plus la densité est forte, au plus l’objet consomme).</p>
-
-      <!-- video -->
-      <div class="video video--large"></div>
-
-      <p class="gridText gridText--2-6">Ne pensez pas que télécharger l’application vos suffit pour vous débarrasser de nous. Tous les mois l’environnement de l’utilisateur sera analysé afin de voir si les changements conseillés auparavant, ont été appliqués. L’application lui permettra également de voir si ses proches également inscrits,  s’impliquent dans cette lutte pour le climat et établira donc une sorte de classement (ou en tout cas, un moyen de comparaison).</p>
-
-      <a href="" target="_blank" class="link">Découvrez le prototyping</a>
-
-      <div class="textRound">
-        <ul class="textAnim textAnim--purple">
-          <li class="textAnim__content">
-            <p class="textAnim__el">&#8239;→&#8239;disposition&#8239;→&#8239;disposition&#8239;→&#8239;disposition&#8239;→&#8239;disposition</p>
-            <p class="textAnim__el">&#8239;→&#8239;disposition&#8239;→&#8239;disposition&#8239;→&#8239;disposition&#8239;→&#8239;disposition</p>
-            <p class="textAnim__el">&#8239;→&#8239;disposition&#8239;→&#8239;disposition&#8239;→&#8239;disposition&#8239;→&#8239;disposition</p>
-          </li>
-          <li class="textAnim__content">
-            <p class="textAnim__el">&#8239;→&#8239;expérimentation&#8239;→&#8239;experimentation&#8239;→&#8239;expérimentation&#8239;→&#8239;expérimentation</p>
-            <p class="textAnim__el">&#8239;→&#8239;expérimentation&#8239;→&#8239;experimentation&#8239;→&#8239;expérimentation&#8239;→&#8239;expérimentation</p>
-            <p class="textAnim__el">&#8239;→&#8239;expérimentation&#8239;→&#8239;experimentation&#8239;→&#8239;expérimentation&#8239;→&#8239;expérimentation</p>
-          </li>
+      <div class="rounded-text">
+        <ul class="banner">
+          <li class="banner__item">dispositions → dispositions → dispositions → dispositions → dispositions</li>
+          <li class="banner__item banner__item--reverse">expérimentation ← expérimentation ← expérimentation ←
+            expérimentation ← expérimentation</li>
         </ul>
-        <svg class="textRound__content" x="0px" y="0px" viewBox="0 0 64.7 64.7">
-          <path id="SVGID_x5F_1_x5F_" class="textRound__round" d="M59,32.4C59,47.1,47.1,59,32.4,59S5.7,47.1,5.7,32.4S17.6,5.7,32.4,5.7S59,17.6,59,32.4z"/>
+
+        <svg class="rounded-text__words" x="0px" y="0px" viewBox="0 0 64.7 64.7">
+          <path class="rounded-text__circle" id="circle2"
+            d="M59,32.4C59,47.1,47.1,59,32.4,59S5.7,47.1,5.7,32.4S17.6,5.7,32.4,5.7S59,17.6,59,32.4z" />
           <text>
-            <textPath class="textRound__text"  xlink:href="#SVGID_x5F_1_x5F_">
-              <tspan>Expérimentation • Expérimentation • Expérimentation</tspan>
+            <textPath xlink:href="#circle2">
+              <tspan>expérimentation • expérimentation</tspan>
             </textPath>
           </text>
         </svg>
       </div>
 
-      <p class="gridText gridText--5-8">Afin de promouvoir notre application, nous vous invitons à venir tester nos casques de réalité augmentées et découvrir tous les entitées/particules non perceptibles dans l’air. Nous sommes présents dans différents salons tel que le KIKK Festival,...</p>
+      <p class="text text--indent-2">
+        Afin de promouvoir notre application, nous vous invitons à venir tester nos casques
+        de réalité augmentées et découvrir tous les entités/particules non perceptibles dans l’air.
+        Nous sommes présents dans différents salons tel que le KIKK Festival,...
+      </p>
     </section>
-    <section class="section section--right section--bg section--dispositifs">
-      <h2 class='title title--right'>Dispositifs éphéméres</h2>
-      <p class="subtitle subtitle--right">Où nous trouver&#8239;?</p>
 
-      <p class="gridText gridText--5-7">Viens tester nos casques AR et découvre les particules non perceptibles dans&nbsp;l’air.</p>
+    <section class="section">
 
-      <ul class="gradientText gradientText--left">
-        <li class="gradientText__el">Stands&#8239;expérimentales</li>
-        <li class="gradientText__el">Stands&#8239;expérimentales</li>
-        <li class="gradientText__el">Stands&#8239;expérimentales</li>
-        <li class="gradientText__el">Stands&#8239;expérimentales</li>
-        <li class="gradientText__el">Stands&#8239;expérimentales</li>
+      <h2 class="title title--right">
+        Dispositifs <span class="line-break"></span>
+        éphémères
+      </h2>
+      <h3 class="title-alt title-alt--right title-alt--white">Où nous trouver&#8239;?</h3>
+
+      <p class="text text--right text--short text--indent-4">
+        Viens tester nos casques AR et découvre les particules non perceptibles dans l’air.
+      </p>
+
+      <ul class="blinker">
+        <li class="blinker__item blinker__item--10">stands expérimentales</li>
+        <li class="blinker__item blinker__item--30">stands expérimentales</li>
+        <li class="blinker__item blinker__item--60">stands expérimentales</li>
+        <li class="blinker__item blinker__item--80">stands expérimentales</li>
+        <li class="blinker__item blinker__item--100">stands expérimentales</li>
       </ul>
 
-      <ul class="ou">
-        <li class="ou__el">
-          <h3 class="title title--ou">Kikk</h3>
-          <ul class="ou__content">
-            <li class="ou__date">18.10.2019</li>
-            <li>Rue de l'Evêché 10 <span class="ou__city">5000 Namur</span></li>
+      <ul class="date">
+        <li class="date__item">
+          <h4 class="date__event">kikk</h4>
+          <ul>
+            <li class="date__info">
+              <time class="date__when">31.10.2020</time>
+            </li>
+            <li class="date__info">
+              <address class="date__where">
+                Place d'Armes <span class="line-break"></span>
+                5000 Namur <span class="line-break"></span>
+                Belgique
+              </address>
+            </li>
           </ul>
         </li>
-        <li class="ou__el">
-          <h3 class="title title--ou">Viva</h3>
-          <ul class="ou__content">
-            <li class="ou__date">04.11.2019</li>
-            <li>Rue Vanderkin 542 <span class="ou__city">1180 Bruxelles</span></li>
+        <li class="date__item">
+          <h4 class="date__event">viva</h4>
+          <ul>
+            <li class="date__info">
+              <time class="date__when">02.08.2020</time>
+            </li>
+            <li class="date__info">
+              <address class="date__where">
+                Contrada Grofoleo 24 <span class="line-break"></span>
+                70010 Locorotondo <span class="line-break"></span>
+                Italie
+              </address>
+            </li>
           </ul>
         </li>
-        <li class="ou__el">
-          <h3 class="title title--ou">Fiff</h3>
-          <ul class="ou__content">
-            <li class="ou__date">12.12.2019</li>
-            <li>Rue des Brasseurs 175 <span class="ou__city">5000 Namur</span></li>
+        <li class="date__item">
+          <h4 class="date__event">fiff</h4>
+          <ul>
+            <li class="date__info">
+              <time class="date__when">28.09.2020</time>
+            </li>
+            <li class="date__info">
+              <address class="date__where">
+                Rue des Brasseurs 175 <span class="line-break"></span>
+                5000 Namur <span class="line-break"></span>
+                Belgique
+              </address>
+            </li>
           </ul>
         </li>
-        <li class="ou__el">
-          <h3 class="title title--ou">Dour</h3>
-          <ul class="ou__content">
-            <li class="ou__date">11.01.2020</li>
-            <li>Rue des Canadiens 100 <span class="ou__city">7370 Dour</span></li>
+        <li class="date__item">
+          <h4 class="date__event">dour</h4>
+          <ul>
+            <li class="date__info">
+              <time class="date__when">16.07.2020</time>
+            </li>
+            <li class="date__info">
+              <address class="date__where">
+                Rue d'Elouges <span class="line-break"></span>
+                7370 Dour <span class="line-break"></span>
+                Belgique
+              </address>
+            </li>
           </ul>
         </li>
       </ul>
     </section>
-    <section class="section section--bg section--imagine">
-      <h2 class='title title--section title--center'>Imaginé & concep<span class="title__remove">-</span>tualisé</h2>
-      <p class="gridText">Nous sommes un groupe d’étudiant engagé dans la lutte pour le climat dont le but principal est de défendre ses idéaux pour un futur plus sain.</p>
 
-      <ul class="textAnim textAnim--red">
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo</p>
-          <p class="textAnim__el">&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo</p>
-          <p class="textAnim__el">&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo&#8239;→&#8239;matteo</p>
+    <section class="section">
+      <h2 class='title'>
+        Imaginé <span class="line-break"></span>
+        & concep- <span class="line-break line-break--not-desktop"></span>
+        tualisé
+      </h2>
+
+      <p>
+        Nous sommes un groupe d’étudiant engagé dans la lutte pour le climat dont le
+        but principal est de défendre ses idéaux pour un futur plus sain.
+      </p>
+
+      <ul class="banner banner--orange">
+        <li class="banner__item">
+          <a class="link" href="https://benjamindossantos.be" target=_blank rel="noopener noreferrer">
+            benjamin → benjamin → benjamin → benjamin → benjamin → benjamin → benjamin → benjamin
+          </a>
         </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin</p>
-          <p class="textAnim__el">&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin</p>
-          <p class="textAnim__el">&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin&#8239;→&#8239;benjamin</p>
+        <li class="banner__item banner__item--reverse">
+          <a class="link" href="https://fionamiele.com" target=_blank rel="noopener noreferrer">
+            fiona ← fiona ← fiona ← fiona ← fiona ← fiona ← fiona ← fiona
+          </a>
         </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona</p>
-          <p class="textAnim__el">&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona</p>
-          <p class="textAnim__el">&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona&#8239;→&#8239;fiona</p>
+        <li class="banner__item">
+          <a class="link" href="http://matteodelorenzi.be" target=_blank rel="noopener noreferrer">
+            matteo → matteo → matteo → matteo → matteo → matteo → matteo → matteo
+          </a>
         </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime</p>
-          <p class="textAnim__el">&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime</p>
-          <p class="textAnim__el">&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime&#8239;→&#8239;maxime</p>
+        <li class="banner__item banner__item--reverse">
+          <a class="link" href="https://maximefondu.be" target=_blank rel="noopener noreferrer">
+            maxime ← maxime ← maxime ← maxime ← maxime ← maxime ← maxime ← maxime
+          </a>
         </li>
-        <li class="textAnim__content">
-          <p class="textAnim__el">&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie</p>
-          <p class="textAnim__el">&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie</p>
-          <p class="textAnim__el">&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie&#8239;→&#8239;stéphanie</p>
+        <li class="banner__item">
+          <a class="link" href="https://stephanieassifoua.fr" target=_blank rel="noopener noreferrer">
+            stéphanie → stéphanie → stéphanie → stéphanie → stéphanie → stéphanie → stéphanie → stéphanie
+          </a>
         </li>
       </ul>
-
     </section>
+
   </main>
+
   <footer class="footer">
-    <div class="logo">
-      <a href="index.html">
-        <h1 class="logo__vume">Vume. - percevoir l'invisible</h1>
-        <svg class="logo__svg" x="0px" y="0px" viewBox="0 0 64.7 64.7">
-          <path id="SVGID_x5F_1_x5F_" class="logo__text" d="M59,32.4C59,47.1,47.1,59,32.4,59S5.7,47.1,5.7,32.4S17.6,5.7,32.4,5.7S59,17.6,59,32.4z"/>
-          <text>
-            <textPath  xlink:href="#SVGID_x5F_1_x5F_">
-              <tspan class="logo__span">Percevoir l’invisible - Percevoir l’invisible</tspan>
-            </textPath>
-          </text>
-        </svg>
-      </a>
-    </div>
+    <a class="logo" href="#circle">
+      <h1 class="logo__symbole">Vume. &mdash; Percevoir l'invisible</h1>
+      <svg class="logo__words" x="0px" y="0px" viewBox="0 0 64.7 64.7">
+        <path class="logo__circle" id="circle"
+          d="M59,32.4C59,47.1,47.1,59,32.4,59S5.7,47.1,5.7,32.4S17.6,5.7,32.4,5.7S59,17.6,59,32.4z" />
+        <text>
+          <textPath xlink:href="#circle">
+            <tspan>Percevoir l’invisible • Percevoir l’invisible</tspan>
+          </textPath>
+        </text>
+      </svg>
+    </a>
   </footer>
-  <script src="scripts/app.js"></script>
+
+  <svg class="liquid" viewBox="0 0 1057 2079" fill="none">
+    <g class="liquid__item" filter="url(#filter0_d)">
+      <path id="morph"
+        d="M382.389 949.81C711.336 1209.78 782.899 662.732 905.618 428.24C1151.3 -41.2034 -158.436 522.387 382.389 949.81Z" />
+    </g>
+    <defs>
+      <filter id="filter0_d" color-interpolation-filters="sRGB">
+        <!-- <feFlood flood-opacity="0" result="BackgroundImageFix" /> -->
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <!-- <feOffset /> -->
+        <feGaussianBlur stdDeviation="125" />
+        <feColorMatrix values="0 0 0 0 0.819608 0 0 0 0 0.203922 0 0 0 0 0.027451 0 0 0 1 0" />
+        <!-- <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" /> -->
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+      </filter>
+    </defs>
+  </svg>
+
+
+  <div class="grid">
+    <div class="grid__cell"></div>
+    <div class="grid__cell"></div>
+    <div class="grid__cell"></div>
+    <div class="grid__cell"></div>
+    <div class="grid__cell"></div>
+    <div class="grid__cell"></div>
+    <div class="grid__cell"></div>
+    <div class="grid__cell"></div>
+  </div>
+
 </body>
+
 </html>
