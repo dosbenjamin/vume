@@ -1,1 +1,5 @@
-//import lottie from './components/lottie.js';
+import home from 'pages/home';
+
+(function () {
+  home.init();
+})();
