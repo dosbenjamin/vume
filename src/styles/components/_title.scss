@@ -1,107 +1,46 @@
-.title{
-  font-family: 'Syne', sans-serif;
+.title {
+  font-family: Syne, sans-serif;
   font-weight: 900;
-  font-size: 33.78px;
-  line-height: 1.02;
+  font-size: ms(2);
+  line-height: units(2.75, m);
   color: $cPurple;
-  margin: 0;
+  margin: 0 0 units(4, m) 0;
 
-  @include large{
-    font-size: 64.47px;
-    line-height: 1.02;
+  @include desktop {
+    display: inline-block;
+    font-size: ms(3, $thread: d);
+    line-height: units(5, d);
+    margin: 0 0 units(9, d) 0;
+    grid-column: 1 / 6;
   }
 
-  &--header{
-    color: $cRed;
-    font-size: 46.28px;
+  &--header {
+    margin: 0;
+    color: $cOrange;
+    font-size: 10.5vmin;
+    line-height: 10.5vmin;
 
-    @include small{
-      font-size: 64.47px;
-    }
-
-    @include large{
-      font-size: 90.91px;
+    @include desktop {
+      font-size: 13vmin;
+      line-height: 13vmin;
     }
   }
 
-  &--section{
-    margin-bottom: units(8, m);
-  }
+  &--center {
+    display: block;
+    text-align: center;
 
-  &--ou{
-    color: $cBlack;
-  }
-
-
-  @include small{
-    &__remove{
-      display: none;
-    }
-
-    &--left{
-      grid-column: 2 / 5;
-    }
-
-    &--center{
-      text-align: center;
+    @include desktop {
       grid-column: 2 / 6;
     }
-
-    &--right{
-      text-align: right;
-      grid-column: 3 / 6;
-    }
   }
 
-  @include medium{
-    &--left{
-      grid-column: 2 / 4;
-    }
-  }
+  &--right {
+    text-align: right;
+    margin-bottom: 0;
 
-  @include large{
-    &--center{
-      grid-column: 2 / 8;
-    }
-
-    &--right{
-      grid-column: 3 / 8;
-    }
-  }
-}
-
-.subtitle{
-  color: $cRed;
-  letter-spacing: .2em;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: units(1 ,m);
-  margin-bottom: units(8, m);
-
-  @include small{
-    grid-column: 2 / 5;
-  }
-
-  @include large{
-    margin-top: units(1 ,d);
-    margin-bottom: units(6, d);
-    grid-column: 2 / 6;
-  }
-
-  &--purple{
-    color: $cPurple;
-    margin: 0;
-    text-align: center;
-  }
-
-  &--right{
-
-    @include small{
-      grid-column: 4 / 6;
-    }
-
-    @include large{
-      grid-column: 5 / 8;
+    @include desktop {
+      grid-column: 3 / 7;
     }
   }
 }

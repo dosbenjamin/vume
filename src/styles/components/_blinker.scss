@@ -1,0 +1,43 @@
+.blinker {
+  font-family: Syne, sans-serif;
+  color: $cPurple;
+  font-size: ms(1);
+  white-space: nowrap;
+  margin-top: units(-6, m);
+
+  @include desktop {
+    margin-top: units(-8, d);
+    font-size: ms(2, $thread: d);
+    text-align: left;
+    grid-column: 2 / 5;
+  }
+
+  &--indent {
+    text-align: right;
+
+    @include desktop {
+      text-align: left;
+    }
+  }
+
+  &__item {
+    line-height: units(3, m);
+    // animation: blink 1s steps(2) infinite;
+
+    @include desktop {
+      line-height: units(4, d);
+    }
+
+    $opacities: 10, 30, 60, 80, 100;
+    $i: 0;
+
+    @each $opacity in $opacities {
+      $i: $i + 1;
+
+      &--#{$opacity} {
+        opacity: $opacity / 100;
+        animation-delay: $i * 100ms;
+      }
+    }
+  }
+}

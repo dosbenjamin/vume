@@ -1,0 +1,63 @@
+.banner {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  color: $cGrey;
+  font-size: ms(1);
+  white-space: nowrap;
+  margin-bottom: units(2, m);
+  margin-left: units(-2, m);
+  // width: 100vw;
+  overflow: hidden;
+
+  @include center;
+
+  @include desktop {
+    margin-left: 0;
+    // position: relative;
+    // left: 50%;
+    // transform: translateX(-50%);
+    font-size: ms(2, $thread: d);
+    margin-bottom: units(3, d);
+    grid-column: 1 / 7;
+  }
+
+  &--orange {
+    color: $cOrange;
+  }
+
+  &__item {
+    line-height: units(2.5, m);
+    // animation: banner 20s linear infinite;
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+      line-height: units(4, d);
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+
+    &--reverse {
+      animation-direction: reverse;
+    }
+
+    $items: 3;
+
+    @for $i from 1 through $items {
+      &:nth-child(#{$i}) {
+        animation-duration: 4s * (random($items) + 1);
+      }
+    }
+  }
+}
+
+.rounded-text .banner {
+  margin: 0;
+  overflow: visible;
+}
+
+.section:last-child .banner {
+  margin-bottom: 0;
+}

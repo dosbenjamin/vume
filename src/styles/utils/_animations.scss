@@ -1,47 +1,21 @@
-@keyframes logo{
-  100%{
+@keyframes turn {
+  to {
     transform: rotate(360deg);
   }
 }
 
-@keyframes textAnim{
-  100%{
-    transform: translate(100%);
+@keyframes banner {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
   }
 }
 
-@keyframes link{
-  100%{
-    margin-left: 6px;
-    opacity: 1;
+@keyframes blink {
+  to {
+    text-indent: 9999px;
   }
 }
-
-//
-// @keyframes background{
-//   20%{
-//     filter: blur(15px);
-//     transform: scaleX(1.1);
-//     transform: scaleY(1.2);
-//   }
-//   40%{
-//     filter: blur(25px);
-//     transform: scaleX(1.5);
-//     transform: scaleY(1.1);
-//   }
-//   60%{
-//     filter: blur(10px);
-//     transform: scaleX(.9);
-//     transform: scaleY(.7);
-//   }
-//   80%{
-//     filter: blur(30px);
-//     transform: scaleX(1.3);
-//     transform: scaleY(1.1);
-//   }
-//   100%{
-//     filter: blur(10px);
-//     transform: scaleX(1.1);
-//     transform: scaleY(1.2);
-//   }
-// }

@@ -1,51 +1,54 @@
-.logo{
-  width: 158px;
-  height: 158px;
+.logo {
   position: relative;
-  display: flex;
+  height: units(13, m);
+  width: units(13, m);
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  &--header{
-    @include small{
-      position: absolute;
-      top: units(2, d);
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    @include large{
-      transform: none;
-      left: 32px;
-    }
+  @include desktop {
+    height: units(10, d);
+    width: units(10, d);
   }
 
-  &__vume{
-    padding: 0;
-    margin: 0;
-    width: 80px;
-    height: 16px;
-    background-image: url("/../assets/svg/logo_vume_purple.svg");
-    background-repeat: no-repeat;
-    text-indent: 100%;
+  &__symbole {
     overflow: hidden;
     white-space: nowrap;
+    text-indent: 100%;
+    background-image: url("/../assets/images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: units(1.5, m);
+    width: units(12, m);
+    position: relative;
+    top: 2px;
+    margin: 0;
+
+    @include desktop {
+      height: units(1, d);
+      width: units(12, d);
+    }
   }
 
-  &__svg{
+  &__words {
+    font-weight: bold;
     position: absolute;
-    top: 0;
-    left: 0;
-    animation: 22S logo infinite linear;
+    font-size: ms(-5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: 10s turn infinite linear;
+
+    @include desktop {
+      font-size: ms(-4, $thread: d);
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
   }
 
-  &__text{
+  &__circle {
     fill: none;
-  }
-
-  &__span{
-    font-family:'Inconsolata', monospace;
-    font-weight: 700;
-    font-size:5px;
   }
 }

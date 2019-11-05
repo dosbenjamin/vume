@@ -1,0 +1,35 @@
+.rounded-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vmin;
+  width: 100%;
+  position: relative;
+  margin: units(4, m) 0;
+
+  @include desktop {
+    @include grid;
+
+    height: 50vmin;
+    width: auto;
+    grid-column: 1 / 7;
+  }
+
+  &__words {
+    height: 100%;
+    font-family: Syne, sans-serif;
+    font-size: ms(-3);
+    fill: $cOrange20;
+    animation: 10s turn infinite linear;
+    position: absolute;
+
+    @include desktop {
+      height: auto;
+      grid-column: 2 / 4;
+    }
+  }
+
+  &__circle {
+    fill: none;
+  }
+}

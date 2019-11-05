@@ -1,0 +1,56 @@
+.title-alt {
+  font-family: Inconsolata, monospace;
+  font-size: ms(0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $cPurple;
+  max-width: 15rem;
+  margin: 0;
+  line-height: units(2, m);
+
+  @include desktop {
+    font-size: ms(0, $thread: d);
+    line-height: units(2, d);
+    margin: 0 auto;
+  }
+
+  &--center {
+    text-align: center;
+
+    @include desktop {
+      margin: 0 auto;
+    }
+  }
+
+  &--right {
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: units(4, m);
+
+    @include desktop {
+      grid-column: 5 / 7;
+      margin-bottom: units(4, d);
+    }
+  }
+
+  &--orange {
+    color: $cOrange;
+  }
+
+  &--white {
+    color: $cWhite;
+  }
+}
+
+.title .title-alt,
+.title + .title-alt {
+  display: block;
+  margin-top: units(1, m);
+
+  @include desktop {
+    // margin-top: units(1, d);
+    // margin-left: columns(1);
+    // max-width: unset;
+    // text-align: right;
+  }
+}

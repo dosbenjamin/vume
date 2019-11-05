@@ -1,25 +1,5 @@
 @use "sass:map";
 
-// m: 18, 24.66, 33.78, 46,28, 63.41
-// D: 23, 32.43, 45.73, 64.47, 90.91, 128.18
-//lineHeight Title m: 1.02
-
-$typeSettings: (
-  fontSize: (
-    m: 18px,
-    d: 23px
-  ),
-  lineHeight: (
-    m: 1.37,
-    d: 1.41
-  )
-);
-
-$modularscale: (
-  base: 18px,
-  ratio: $fourth
-);
-
 /// Choose units based on the baseline grid
 ///
 /// @param {number} $unit
@@ -29,14 +9,20 @@ $modularscale: (
 /// @return {number} `$unit` multiply by `$device` value.
 
 @function units($unit, $device) {
-  $fontSize: map.get(
-    map.get($typeSettings, fontSize),
-    $device
-  );
-  $lineHeight: map.get(
-    map.get($typeSettings, lineHeight),
-    $device
-  );
+  $fontSize: map.get(map.get($typeSettings, fontSize), $device);
+  $lineHeight: map.get(map.get($typeSettings, lineHeight), $device);
   $blGrid: $lineHeight * $fontSize / 2;
+
   @return $unit * $blGrid;
+}
+
+$gridBorder: 2px;
+$columns: 6;
+
+@function columns($number) {
+  $gutter: units(1, d);
+  $border: ($number + 1) * $gridBorder;
+  $calc: calc((100% / #{$columns}) * #{$number} - #{$gutter});
+
+  @return $calc;
 }

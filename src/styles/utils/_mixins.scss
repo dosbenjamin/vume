@@ -1,0 +1,11 @@
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@mixin center {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%);
+}

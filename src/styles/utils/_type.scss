@@ -1,0 +1,54 @@
+@use "sass:map";
+
+@font-face {
+  font-family: "Syne";
+  font-weight: 900;
+  src: url("/../assets/font/Syne-Extra.otf");
+  font-display: block;
+  //  to woff/woff2
+}
+
+@font-face {
+  font-family: "Syne";
+  font-weight: 700;
+  src: url("/../assets/font/Syne-Bold.otf");
+  font-display: block;
+  //  to woff/woff2
+}
+
+$typeSettings: (
+  fontSize: (
+    m: 18px,
+    d: 23px
+  ),
+  lineHeight: (
+    m: 1.37,
+    d: 1.41
+  )
+);
+
+$modularscale: (
+  base: map.get(map.get($typeSettings, fontSize), m),
+  ratio: $fourth,
+  d: (
+    base: map.get(map.get($typeSettings, fontSize), d),
+    ratio: $fifth
+  )
+);
+
+html {
+  font-size: map.get(map.get($typeSettings, fontSize), m);
+  line-height: map.get(map.get($typeSettings, lineHeight), m);
+
+  @include desktop {
+    font-size: map.get(map.get($typeSettings, fontSize), d);
+    line-height: map.get(map.get($typeSettings, lineHeight), d);
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: Inconsolata, monospace;
+}

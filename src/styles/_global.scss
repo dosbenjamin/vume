@@ -1,0 +1,96 @@
+body {
+  color: $cBlack;
+  overflow-x: hidden;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/../assets/images/texture_bg.gif");
+    background-size: 200px;
+    z-index: -2;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0 0 units(2, m) 0;
+  max-width: 25rem;
+
+  @include desktop {
+    margin: 0 0 units(3, d) 0;
+    grid-column: span 3;
+  }
+
+  &:not(+ p),
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.text {
+  &--right {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &--short {
+    @include desktop {
+      grid-column: span 2;
+      max-width: 15rem;
+    }
+  }
+
+  &--long {
+    @include desktop {
+      grid-column: span 4;
+      max-width: 30rem;
+    }
+  }
+
+  &--indent-1 {
+    @include desktop {
+      grid-column-end: 4;
+    }
+  }
+
+  &--indent-2 {
+    @include desktop {
+      grid-column-end: 7;
+    }
+  }
+
+  &--indent-3 {
+    @include desktop {
+      grid-column-end: 5;
+    }
+  }
+
+  &--indent-4 {
+    @include desktop {
+      grid-column-end: 6;
+    }
+  }
+}
+
+.line-break {
+  display: block;
+
+  &--not-desktop {
+    @include desktop {
+      display: initial;
+    }
+  }
+}
+
+::selection {
+  background-color: $cOrange20;
+}

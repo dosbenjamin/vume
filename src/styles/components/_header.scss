@@ -1,43 +1,38 @@
-.header{
+.header {
   width: 100%;
   height: 100vh;
+  padding: units(2, m) 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
-  &__content{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: units(2, m) 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-
-    @include small{
-      justify-content: center;
-    }
+  @include desktop {
+    padding: units(2, d) 0;
   }
 
-  &__el{
+  &__wrapper {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    &:nth-child(2){
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+  &__arrow {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("/../assets/images/arrow.svg");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 120%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 
-    &:last-child{
-      margin-bottom: units(8, m);
-
-      @include small{
-        margin: 0;
-        width: 330px;
-        transform: translateY(110px);
-        margin-top: units(5, d);
-      }
+    @include desktop {
+      background-size: 50%;
     }
   }
 }

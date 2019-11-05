@@ -1,18 +1,30 @@
-@import 'modularscale-sass';
-@import 'utils/variables';
-@import 'utils/font';
-@import 'utils/mixin';
-@import 'utils/animations';
-@import 'utils/grid';
-@import 'components/title';
-@import 'components/logo';
-@import 'components/resets';
-@import 'components/header';
-@import 'components/sections';
-@import 'components/videos';
-@import 'components/gradientText';
-@import 'components/ou';
-@import 'components/footer';
-@import 'components/textAnim';
-@import 'components/roundedText';
-@import 'components/links';
+// Tools
+@import "normalize.css/normalize";
+@import "modularscale-sass";
+
+// Utils
+@import "utils/responsive";
+@import "utils/type";
+@import "utils/colors";
+@import "utils/grid";
+@import "utils/mixins";
+@import "utils/animations";
+
+// Global style
+@import "global";
+
+// Components
+@import "components/header";
+@import "components/logo";
+@import "components/title";
+@import "components/title-alt";
+@import "components/section";
+@import "components/banner";
+@import "components/liquid";
+@import "components/video";
+@import "components/blinker";
+@import "components/rounded-text";
+@import "components/date";
+@import "components/footer";
+@import "components/link";
+@import "components/grid";

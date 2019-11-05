@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  @include desktop {
+    &:hover {
+      color: $cPurple;
+    }
+  }
+}

@@ -1,11 +1,9 @@
-.footer{
-  width: 100%;
-  padding: units(6 ,m) 20px;
-  box-sizing: border-box;
+.footer {
   display: flex;
   justify-content: center;
+  padding: units(3, m) 0 units(13, m) 0;
 
-  @include large{
-    padding: units(6 ,d) 32px;
+  @include desktop {
+    padding: units(2, d) 0 units(13, d) 0;
   }
 }

@@ -1,0 +1,29 @@
+.grid {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  box-sizing: border-box;
+  padding: 0 units(2, d);
+  opacity: 0.2;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  z-index: -2;
+
+  &__cell {
+    border: 2px solid $cPurple20;
+    border-top: none;
+    border-bottom: none;
+    width: calc(100% / 8 - #{units(1, d)});
+    height: 100%;
+    margin-right: units(1, d);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

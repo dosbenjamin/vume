@@ -1,0 +1,10 @@
+// Responsive breakpoints
+$screen-small: 500px;
+$screen-medium: 600px;
+$desktop: 1100px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

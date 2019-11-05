@@ -1,0 +1,14 @@
+.section {
+  padding: units(7, m) units(2, m) units(10, m);
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  @include desktop {
+    @include grid;
+    padding: units(7, d) calc(#{units(2, d)} - #{$gridBorder * 3}) units(11, d);
+    width: calc((100% / 8) * 6);
+    margin: 0 auto;
+    overflow-x: visible;
+    grid-column-gap: units(1, d);
+  }
+}
