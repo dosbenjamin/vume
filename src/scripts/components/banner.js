@@ -1,22 +1,17 @@
-const $banners = document.querySelectorAll('.section:first-child .banner__item');
-
 export default {
-  start () {
-    bannerSize($banners);
+  generate ($words) {
+    $words.forEach($el => {
+      const windowWidth = document.body.offsetWidth
+      const elWidth = $el.firstElementChild.offsetWidth
+      const numberOfEl = Math.round(windowWidth / elWidth) + 1
+      const bannerContent = $el.firstElementChild.textContent
+      let template = ''
+
+      for (let i = 0; i < numberOfEl; i++) {
+        template += `<span>${bannerContent}</span>`
+      };
+
+      $el.innerHTML = template
+    })
   }
-};
-
-const bannerSize = $elList => {
-  const windowWidth = document.body.offsetWidth;
-  $elList.forEach($el => {
-    const elWidth = $el.offsetWidth;
-    const needed = Math.round(windowWidth / elWidth) + 10;
-    const bannerContent = $el.textContent;
-
-    for (let i = 0; i < needed; i++) {
-      const $span = document.createElement('span');
-      $span.textContent = bannerContent;
-      $el.append($span);
-    };
-  });
-};
+}

@@ -5,11 +5,16 @@
   white-space: nowrap;
   margin-top: units(-6, m);
 
+  @include tablet {
+    grid-column: 2 / 6;
+    font-size: ms(1, $thread: d);
+  }
+
   @include desktop {
-    margin-top: units(-8, d);
     font-size: ms(2, $thread: d);
+    margin-top: units(-8, d);
     text-align: left;
-    grid-column: 2 / 5;
+    grid-column: 2 / 7;
   }
 
   &--indent {
@@ -22,7 +27,7 @@
 
   &__item {
     line-height: units(3, m);
-    // animation: blink 1s steps(2) infinite;
+    animation: blink 1s steps(2) infinite;
 
     @include desktop {
       line-height: units(4, d);

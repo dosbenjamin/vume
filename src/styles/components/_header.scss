@@ -5,6 +5,10 @@
   box-sizing: border-box;
   overflow-x: hidden;
 
+  @include tablet {
+    padding: units(8, m) 0;
+  }
+
   @include desktop {
     padding: units(2, d) 0;
   }
@@ -18,21 +22,16 @@
   }
 
   &__arrow {
+    @include center;
+
     position: absolute;
     top: -5%;
-    left: 50%;
-    transform: translateX(-50%);
     background-image: url("/../assets/images/arrow.svg");
     opacity: 0.5;
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 120%;
-    width: 100vw;
-    height: 100vh;
+    background-size: 80vh;
+    height: 100%;
     z-index: -1;
-
-    @include desktop {
-      background-size: 50%;
-    }
   }
 }

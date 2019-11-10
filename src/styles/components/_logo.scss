@@ -39,9 +39,11 @@
     letter-spacing: 1px;
     animation: 10s turn infinite linear;
 
-    @include desktop {
+    @include tablet {
       font-size: ms(-4, $thread: d);
+    }
 
+    @include desktop {
       &:hover {
         animation-play-state: paused;
       }

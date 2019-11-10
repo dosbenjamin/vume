@@ -1,10 +1,21 @@
-// Responsive breakpoints
-$screen-small: 500px;
-$screen-medium: 600px;
-$desktop: 1100px;
+$tablet: 650px;
+$desktop: 1024px;
+$desktopXL: 1440px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktopXL {
+  @media (min-width: #{$desktopXL}) {
     @content;
   }
 }

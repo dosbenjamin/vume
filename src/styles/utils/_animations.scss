@@ -4,18 +4,8 @@
   }
 }
 
-@keyframes banner {
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(100%);
-  }
-}
-
 @keyframes blink {
   to {
-    text-indent: 9999px;
+    opacity: 0;
   }
 }

@@ -1,16 +1,19 @@
 .video {
+  @include center;
+
   background-color: $cBlack;
   height: 60vmin;
-  width: 100vw;
   margin-top: units(5, m);
-  margin-left: units(-2, m);
+  margin-bottom: units(5, m);
+
+  @include tablet {
+    grid-column: 1 / 7;
+    margin-top: units(4, m);
+    margin-bottom: units(6, m);
+  }
 
   @include desktop {
-    @include center;
-
-    grid-column: 1 / 7;
     height: 90vmin;
-    margin-left: 0;
     margin-top: units(3, d);
     margin-bottom: units(6, d);
   }

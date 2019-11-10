@@ -1,3 +1,7 @@
+html {
+  width: 100vw;
+}
+
 body {
   color: $cBlack;
   overflow-x: hidden;
@@ -24,10 +28,10 @@ ul {
 p {
   margin: 0 0 units(2, m) 0;
   max-width: 25rem;
+  grid-column: 1 / span 3;
 
   @include desktop {
     margin: 0 0 units(3, d) 0;
-    grid-column: span 3;
   }
 
   &:not(+ p),
@@ -43,52 +47,58 @@ p {
   }
 
   &--short {
-    @include desktop {
-      grid-column: span 2;
+    @include tablet {
+      grid-column-end: span 3;
       max-width: 15rem;
+    }
+    @include desktop {
+      grid-column-end: span 2;
     }
   }
 
   &--long {
-    @include desktop {
-      grid-column: span 4;
+    @include tablet {
+      grid-column-end: span 4;
       max-width: 30rem;
     }
   }
 
   &--indent-1 {
+    @include tablet {
+      grid-column-start: 2;
+    }
     @include desktop {
       grid-column-end: 4;
     }
   }
 
   &--indent-2 {
+    @include tablet {
+      grid-column-start: 3;
+    }
     @include desktop {
       grid-column-end: 7;
     }
   }
 
   &--indent-3 {
+    @include tablet {
+      grid-column-start: 3;
+    }
     @include desktop {
-      grid-column-end: 5;
+      grid-column-start: 2;
     }
   }
 
   &--indent-4 {
-    @include desktop {
-      grid-column-end: 6;
+    @include tablet {
+      grid-column-start: 4;
     }
   }
 }
 
 .line-break {
   display: block;
-
-  &--not-desktop {
-    @include desktop {
-      display: initial;
-    }
-  }
 }
 
 ::selection {

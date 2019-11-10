@@ -3,12 +3,24 @@
   overflow-x: hidden;
   box-sizing: border-box;
 
-  @include desktop {
+  @include tablet {
     @include grid;
-    padding: units(7, d) calc(#{units(2, d)} - #{$gridBorder * 3}) units(11, d);
-    width: calc((100% / 8) * 6);
-    margin: 0 auto;
+
+    width: 100%;
+    padding: units(7, m) units(5, m) units(10, m);
     overflow-x: visible;
-    grid-column-gap: units(1, d);
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    padding: units(7, d) #{units(2, d) - 6px} units(11, d);
+    width: calc((100% / 8) * 6);
+  }
+
+  @include desktopXL {
+    width: calc((1440px / 8) * 6);
+    position: relative;
+    left: -6px;
+    padding: units(7, d) 0 units(11, d);
   }
 }

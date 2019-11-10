@@ -32,7 +32,7 @@ $modularscale: (
   ratio: $fourth,
   d: (
     base: map.get(map.get($typeSettings, fontSize), d),
-    ratio: $fifth
+    ratio: 1.4
   )
 );
 
@@ -50,5 +50,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-family: Inconsolata, monospace;
+  font-family: "Inconsolata", monospace;
 }

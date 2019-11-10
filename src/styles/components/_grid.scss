@@ -3,7 +3,7 @@
   height: 100vh;
   position: fixed;
   box-sizing: border-box;
-  padding: 0 units(2, d);
+  padding: 0 units(2, m);
   opacity: 0.2;
   margin: 0 auto;
   top: 0;
@@ -14,16 +14,54 @@
   justify-content: flex-start;
   z-index: -2;
 
+  @include tablet {
+    padding: 0 units(5, m);
+  }
+
+  @include desktop {
+    padding: 0 units(2, d);
+  }
+
+  @include desktopXL {
+    max-width: 1440px;
+    padding: 0;
+  }
+
   &__cell {
     border: 2px solid $cPurple20;
     border-top: none;
     border-bottom: none;
-    width: calc(100% / 8 - #{units(1, d)});
     height: 100%;
-    margin-right: units(1, d);
+    margin-right: units(1, m);
+    width: calc(100% / 4 - #{units(1, m)});
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:nth-child(-n + 4) {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    @include tablet {
+      width: calc(100% / 6 - #{units(1, m)});
+
+      &:nth-child(-n + 2) {
+        display: block;
+      }
+    }
+
+    @include desktop {
+      margin-right: units(1, d);
+      width: calc(100% / 6 - #{units(1, d)});
+    }
+
+    @include desktopXL {
+      width: calc(1440px / 8 - #{units(1, d)});
     }
   }
 }

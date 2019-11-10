@@ -4,12 +4,15 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: $cPurple;
-  max-width: 15rem;
+  max-width: 17rem;
   margin: 0;
   line-height: units(2, m);
 
-  @include desktop {
+  @include tablet {
     font-size: ms(0, $thread: d);
+  }
+
+  @include desktop {
     line-height: units(2, d);
     margin: 0 auto;
   }
@@ -24,11 +27,13 @@
 
   &--right {
     text-align: right;
-    margin-left: auto;
-    margin-bottom: units(4, m);
+    margin: 0 0 units(4, m) auto;
+
+    @include tablet {
+      grid-column: 4 / 7;
+    }
 
     @include desktop {
-      grid-column: 5 / 7;
       margin-bottom: units(4, d);
     }
   }
@@ -47,10 +52,11 @@
   display: block;
   margin-top: units(1, m);
 
+  @include tablet {
+    margin-top: units(2, m);
+  }
+
   @include desktop {
-    // margin-top: units(1, d);
-    // margin-left: columns(1);
-    // max-width: unset;
-    // text-align: right;
+    margin-top: units(1, d);
   }
 }

@@ -6,12 +6,18 @@
   color: $cPurple;
   margin: 0 0 units(4, m) 0;
 
+  @include tablet {
+    grid-column: 1 / 7;
+    font-size: ms(2, $thread: d);
+    line-height: units(4, m);
+    margin: 0 0 units(6, m) 0;
+  }
+
   @include desktop {
-    display: inline-block;
     font-size: ms(3, $thread: d);
-    line-height: units(5, d);
+    display: inline-block;
+    line-height: units(4, d);
     margin: 0 0 units(9, d) 0;
-    grid-column: 1 / 6;
   }
 
   &--header {
@@ -21,26 +27,18 @@
     line-height: 10.5vmin;
 
     @include desktop {
-      font-size: 13vmin;
-      line-height: 13vmin;
+      font-size: 12vmin;
+      line-height: 12vmin;
     }
   }
 
   &--center {
     display: block;
     text-align: center;
-
-    @include desktop {
-      grid-column: 2 / 6;
-    }
   }
 
   &--right {
     text-align: right;
     margin-bottom: 0;
-
-    @include desktop {
-      grid-column: 3 / 7;
-    }
   }
 }

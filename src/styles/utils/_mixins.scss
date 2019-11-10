@@ -1,11 +1,11 @@
 @mixin grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: units(1, d);
 }
 
 @mixin center {
-  position: relative;
-  left: 50%;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   width: 100vw;
-  transform: translate(-50%);
 }

@@ -3,10 +3,14 @@
   margin-top: units(7, m);
   font-family: Syne, sans-serif;
 
-  @include desktop {
+  @include tablet {
     @include grid;
 
     grid-column: 1 / 7;
+  }
+
+  @include desktop {
+    margin-top: units(11, d);
   }
 
   &__item {
@@ -14,30 +18,30 @@
     justify-content: space-between;
 
     @include desktop {
-      grid-column: span 3;
-    }
-
-    &:nth-child(1) {
-      grid-column-end: 4;
-    }
-
-    &:nth-child(2) {
-      grid-column-end: 6;
-    }
-
-    &:nth-child(3) {
-      grid-column-end: 4;
-    }
-
-    &:nth-child(4) {
-      grid-column-end: 6;
+      justify-content: space-around;
     }
 
     &:not(:last-child) {
       margin-bottom: units(4, m);
 
+      @include tablet {
+        margin-bottom: units(6, m);
+      }
+
       @include desktop {
         margin-bottom: units(4, d);
+      }
+    }
+
+    &--left {
+      @include tablet {
+        grid-column: 1 / 6;
+      }
+    }
+
+    &--right {
+      @include tablet {
+        grid-column: 2 / 7;
       }
     }
   }
@@ -47,8 +51,14 @@
     font-size: ms(2);
     margin: 0;
 
-    @include desktop {
+    @include tablet {
       font-size: ms(2, $thread: d);
+    }
+
+    @include desktop {
+      font-size: ms(3, $thread: d);
+      display: inline-flex;
+      align-items: center;
     }
   }
 
@@ -56,8 +66,16 @@
     text-align: right;
     line-height: units(2, m);
 
+    @include desktop {
+      line-height: units(2, d);
+    }
+
     &:first-child {
       margin-bottom: units(1, m);
+
+      @include desktop {
+        margin-bottom: units(1, d);
+      }
     }
   }
 
@@ -65,13 +83,13 @@
     font-size: ms(1);
     color: $cOrange;
 
-    @include desktop {
+    @include tablet {
       font-size: ms(1, $thread: d);
     }
   }
 
   &__where {
     font-style: normal;
-    font-family: Inconsolata, monospace;
+    font-family: "Inconsolata", monospace;
   }
 }
