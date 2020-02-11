@@ -40,7 +40,7 @@
     animation: 10s turn infinite linear;
 
     @include tablet {
-      font-size: ms(-4, $thread: d);
+      font-size: ms(-5, $thread: d);
     }
 
     @include desktop {

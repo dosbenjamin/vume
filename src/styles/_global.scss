@@ -40,6 +40,10 @@ p {
   }
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .text {
   &--right {
     text-align: right;
@@ -51,6 +55,7 @@ p {
       grid-column-end: span 3;
       max-width: 15rem;
     }
+
     @include desktop {
       grid-column-end: span 2;
     }
@@ -63,10 +68,25 @@ p {
     }
   }
 
+  &--bigger {
+    font-size: ms(1);
+    line-height: units(2.5, m);
+
+    @include tablet {
+      line-height: units(2, d);
+    }
+
+    @include desktop {
+      font-size: ms(1, $thread: d);
+      line-height: units(2.5, d);
+    }
+  }
+
   &--indent-1 {
     @include tablet {
       grid-column-start: 2;
     }
+
     @include desktop {
       grid-column-end: 4;
     }
@@ -76,6 +96,7 @@ p {
     @include tablet {
       grid-column-start: 3;
     }
+
     @include desktop {
       grid-column-end: 7;
     }
@@ -85,6 +106,7 @@ p {
     @include tablet {
       grid-column-start: 3;
     }
+
     @include desktop {
       grid-column-start: 2;
     }

@@ -1,22 +1,44 @@
 .liquid {
-  overflow: hidden;
-  width: 100vw;
+  @include center;
+
   position: absolute;
-  top: 0;
+  top: 15vmax;
+  left: 0;
   z-index: -1;
+  fill: none;
+  height: 170vmax;
+
+  @include desktopXL {
+    height: 130vmax;
+  }
+
+  &--top {
+    top: -30vmax;
+
+    .liquid__item {
+      transform: translateX(-10vmax);
+    }
+  }
+
+  &--right {
+    top: -40vmax;
+
+    .liquid__item {
+      @include desktop {
+        transform: translateX(10vmax);
+      }
+    }
+  }
 
   &__item {
-    transform-origin: center;
+    fill: $cOrange20;
     opacity: 0.6;
     mix-blend-mode: multiply;
-    fill: $cOrange20;
+    transform: translateX(10vmax);
   }
 }
 
-.liquid-position1 {
-  display: none;
-}
-
-.liquid-position {
-  display: none;
+.filter {
+  position: absolute;
+  height: 0;
 }

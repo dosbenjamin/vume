@@ -1,6 +1,7 @@
+const windowWidth = document.body.offsetWidth
+
 const howManyWords = $el => {
-  const windowWidth = document.body.offsetWidth
-  const elWidth = $el.firstElementChild.offsetWidth
+  const elWidth = $el.offsetWidth
   const numberOfEl = Math.round(windowWidth / elWidth) + 3
   return { elWidth, numberOfEl }
 }
@@ -16,25 +17,26 @@ const createStyle = width => {
 }
 
 export default {
-  generate () {
-    const $words = document.querySelectorAll('.banner__item')
+  generate ($words) {
     const $style = document.querySelector('style')
+
     let style = ''
 
     $words.forEach($el => {
-      const bannerContent = $el.firstElementChild.textContent
-      const { elWidth, numberOfEl } = howManyWords($el)
+      const bannerContent = $el.firstElementChild.outerHTML
+      const { elWidth, numberOfEl } = howManyWords($el.firstElementChild)
 
       let span = ''
       for (let i = 0; i < numberOfEl; i++) {
-        span += `<span class="banner__el">${bannerContent}</span>`
+        span += bannerContent
+        style += createStyle(elWidth)
       }
-      style += createStyle(elWidth)
 
-      $el.style.width = elWidth * numberOfEl + 'px'
       $el.innerHTML = span
 
-      $el.firstChild.setAttribute('style', `animation-name: banner-${elWidth}`)
+      const $firstEl = $el.querySelector('*:first-child')
+      $firstEl.classList.add('banner__el')
+      $firstEl.setAttribute('style', `animation-name: banner-${elWidth}`)
     })
     $style.innerHTML = style
   }

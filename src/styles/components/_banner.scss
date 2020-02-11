@@ -51,6 +51,7 @@
 
     @include desktop {
       line-height: units(4, d);
+
       &:hover {
         .banner__el {
           animation-play-state: paused;
@@ -62,6 +63,10 @@
       .banner__el:first-child {
         animation-direction: reverse;
       }
+    }
+
+    span {
+      display: inline;
     }
   }
 }

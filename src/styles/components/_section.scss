@@ -1,7 +1,7 @@
 .section {
   padding: units(7, m) units(2, m) units(10, m);
-  overflow-x: hidden;
   box-sizing: border-box;
+  position: relative;
 
   @include tablet {
     @include grid;
@@ -20,7 +20,6 @@
   @include desktopXL {
     width: calc((1440px / 8) * 6);
     position: relative;
-    left: -6px;
-    padding: units(7, d) 0 units(11, d);
+    padding: units(7, d) 6px units(11, d) 6px;
   }
 }

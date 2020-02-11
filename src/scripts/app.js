@@ -1,5 +1,6 @@
 import home from 'pages/home';
 
 (function () {
-  home.init();
-})();
+  document.head.append(document.createElement('style'))
+  home.init()
+})()

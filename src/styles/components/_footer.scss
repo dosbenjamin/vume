@@ -1,6 +1,8 @@
 .footer {
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow-y: hidden;
   padding: units(3, m) 0 units(13, m) 0;
 
   @include desktop {

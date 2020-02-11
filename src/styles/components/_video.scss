@@ -2,7 +2,8 @@
   @include center;
 
   background-color: $cBlack;
-  height: 60vmin;
+  height: 57vmin;
+  object-fit: cover;
   margin-top: units(5, m);
   margin-bottom: units(5, m);
 
